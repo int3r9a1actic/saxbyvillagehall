@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery &amp; Event Showcase | Saxby All Saints Village Hall</title>
+  <meta name="description" content="Browse photos of Saxby All Saints Village Hall, including main hall interior setups, catering kitchen, rural grounds, weddings, and community events.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span class="me-3"><i class="bi bi-geo-alt me-1 text-warning"></i> Church Lane, Saxby All Saints, DN20 0QE</span>
+        <span><i class="bi bi-clock me-1 text-warning"></i> Available for Hire 7 Days a Week</span>
+      </div>
+      <div>
+        <a href="mailto:admin@saxbyvillagehall.co.uk"><i class="bi bi-envelope me-1"></i> admin@saxbyvillagehall.co.uk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Bootstrap 5 Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-wrapper" href="index.html">
+        <div class="navbar-brand-icon">
+          <i class="bi bi-bank2"></i>
+        </div>
+        <div>
+          <div class="navbar-brand-title">Saxby All Saints</div>
+          <div class="navbar-brand-subtitle">Village Hall</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <!-- About Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu shadow" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="about.html"><i class="bi bi-info-circle"></i> Village Hall History &amp; Overview</a></li>
+              <li><a class="dropdown-item" href="facilities.html"><i class="bi bi-building-gear"></i> Facilities &amp; Specifications</a></li>
+              <li><a class="dropdown-item" href="management.html"><i class="bi bi-people"></i> Committee &amp; Trustees</a></li>
+              <li><a class="dropdown-item active" href="gallery.html"><i class="bi bi-images"></i> Photo Gallery</a></li>
+              <li><a class="dropdown-item" href="policies.html"><i class="bi bi-shield-check"></i> Policies &amp; Governance</a></li>
+            </ul>
+          </li>
+
+          <!-- Bookings Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="bookingsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bookings
+            </a>
+            <ul class="dropdown-menu shadow" aria-labelledby="bookingsDropdown">
+              <li><a class="dropdown-item" href="calendar.html"><i class="bi bi-calendar3"></i> Live Calendar &amp; Availability</a></li>
+              <li><a class="dropdown-item" href="charges.html"><i class="bi bi-tag"></i> Hire Charges &amp; Rates</a></li>
+              <li><a class="dropdown-item" href="enquiries.html"><i class="bi bi-pencil-square"></i> Booking Enquiry Form</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="terms.html"><i class="bi bi-file-text"></i> Terms &amp; Conditions</a></li>
+              <li><a class="dropdown-item" href="instructions.html"><i class="bi bi-card-checklist"></i> Hirer Instructions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-accent-custom" href="enquiries.html">
+              <i class="bi bi-calendar-check"></i> Book the Hall
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="hero-section hero-compact">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb page-breadcrumb mb-2">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">About</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Photo Gallery</li>
+        </ol>
+      </nav>
+      <h1 class="hero-title mb-2">Hall &amp; Event Gallery</h1>
+      <p class="hero-lead mb-0">Explore visual perspectives of our main hall, dining setups, catering kitchen, and grounds.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section-padding">
+    <div class="container">
+      
+      <div class="text-center mb-5">
+        <span class="section-subtitle">Visual Tour</span>
+        <h2 class="section-title">See How Our Hall Can Look for Your Occasion</h2>
+        <p class="section-lead mx-auto">From elegant wedding receptions to children's birthday celebrations and parish gatherings.</p>
+      </div>
+
+      <!-- Responsive Image Grid -->
+      <div class="row g-4 mb-5">
+        
+        <!-- Gallery Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-title="Historic Village Hall Exterior" data-img-desc="Charming brick exterior framed by traditional Lincolnshire gardens and Church Lane approach.">
+            <div class="media-placeholder">
+              <i class="bi bi-bank2"></i>
+              <h6 class="fw-bold mb-1">Exterior &amp; Grounds</h6>
+              <small class="text-muted">Click to enlarge</small>
+            </div>
+            <div class="gallery-overlay">
+              <h5>Exterior &amp; Approach</h5>
+              <p>Historic red-brick facade and landscaped front garden path.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-title="Main Hall Set for Celebration" data-img-desc="Banqueting tables with white linen, ambient chandelier lighting, and seated dinner arrangement.">
+            <div class="media-placeholder">
+              <i class="bi bi-heart-fill text-danger"></i>
+              <h6 class="fw-bold mb-1">Wedding &amp; Party Layout</h6>
+              <small class="text-muted">Click to enlarge</small>
+            </div>
+            <div class="gallery-overlay">
+              <h5>Banqueting Setup</h5>
+              <p>Arranged for 75 seated guests with dance floor space.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-title="Modern Catering Kitchen" data-img-desc="Commercial ovens, stainless preparation worktops, rapid dishwasher, and service counter.">
+            <div class="media-placeholder">
+              <i class="bi bi-cup-hot-fill"></i>
+              <h6 class="fw-bold mb-1">Catering Kitchen</h6>
+              <small class="text-muted">Click to enlarge</small>
+            </div>
+            <div class="gallery-overlay">
+              <h5>Commercial Kitchen</h5>
+              <p>Hygienic food prep counters and high-speed catering dishwasher.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-title="Fitness &amp; Pilates Sessions" data-img-desc="Bright daylight through tall timber windows on solid polished timber sprung flooring.">
+            <div class="media-placeholder">
+              <i class="bi bi-universal-access"></i>
+              <h6 class="fw-bold mb-1">Fitness &amp; Movement</h6>
+              <small class="text-muted">Click to enlarge</small>
+            </div>
+            <div class="gallery-overlay">
+              <h5>Sprung Timber Floor</h5>
+              <p>Clear, warm space ideal for weekly yoga and dance classes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Card 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-title="Audio Visual &amp; Conference Meeting Setup" data-img-desc="Theatre style chairs arranged for AGMs, presentations, and community lectures.">
+            <div class="media-placeholder">
+              <i class="bi bi-projector-fill"></i>
+              <h6 class="fw-bold mb-1">Meeting &amp; Presentation</h6>
+              <small class="text-muted">Click to enlarge</small>
+            </div>
+            <div class="gallery-overlay">
+              <h5>Lectures &amp; Presentations</h5>
+              <p>100-inch projection screen and sound PA amplification.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Card 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img-title="Neighbouring All Saints Church" data-img-desc="Picturesque Grade II* listed parish church situated immediately beside the hall grounds.">
+            <div class="media-placeholder">
+              <i class="bi bi-bell-fill"></i>
+              <h6 class="fw-bold mb-1">Church &amp; Village Setting</h6>
+              <small class="text-muted">Click to enlarge</small>
+            </div>
+            <div class="gallery-overlay">
+              <h5>All Saints Church</h5>
+              <p>Stunning medieval setting for church christenings and receptions.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hirer Photo Invitation Box -->
+      <div class="p-4 bg-light rounded-4 border text-center">
+        <h4 class="h5 mb-2">Have great photos from your event at Saxby Village Hall?</h4>
+        <p class="text-muted small mb-3 mx-auto" style="max-width: 600px;">
+          We love showcasing local celebrations! If you'd like your event photos featured on our community gallery, please send them to our web team.
+        </p>
+        <a href="contact.html" class="btn btn-outline-custom btn-sm">Share Photos With Trustees</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white border-0 py-3">
+          <h5 class="modal-title h6" id="galleryModalLabel">Photo Showcase</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 text-center bg-light">
+          <div class="media-placeholder rounded-3 mb-3" style="min-height: 350px;">
+            <i class="bi bi-images fs-1 text-primary"></i>
+            <h5 class="fw-bold mt-2 modal-display-title">Saxby All Saints Village Hall</h5>
+            <p class="text-muted small modal-display-desc">High-resolution image preview placeholder.</p>
+          </div>
+        </div>
+        <div class="modal-footer bg-white border-0 py-2 d-flex justify-content-between">
+          <span class="text-muted small">Saxby All Saints Village Hall Photo Archive</span>
+          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="navbar-brand-icon" style="width: 36px; height: 36px; font-size: 1.1rem;">
+              <i class="bi bi-bank2"></i>
+            </div>
+            <div>
+              <div class="fw-bold text-white fs-5">Saxby All Saints</div>
+              <div class="text-warning small text-uppercase fw-semibold" style="letter-spacing: 0.1em; font-size: 0.7rem;">Village Hall</div>
+            </div>
+          </div>
+          <p class="small text-white-50 mb-3">
+            A treasured rural community facility in North Lincolnshire, operated by volunteer trustees for public benefit, social fellowship, and private hire.
+          </p>
+          <div class="small text-white-50">
+            <i class="bi bi-shield-lock me-1 text-warning"></i> Registered Charity No. 100000 (Placeholder)
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events &amp; Clubs</a></li>
+            <li><a href="community.html">Community News</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h5>Bookings &amp; Hirers</h5>
+          <ul class="footer-links">
+            <li><a href="calendar.html">Live Availability (Hall Booking Online)</a></li>
+            <li><a href="charges.html">Hire Charges &amp; Pricing</a></li>
+            <li><a href="enquiries.html">Booking Enquiry Form</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="instructions.html">Hirer Guidelines &amp; Keys</a></li>
+            <li><a href="policies.html">Policies &amp; Safeguarding</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Contact &amp; Location</h5>
+          <p class="small text-white-50 mb-2">
+            <i class="bi bi-geo-alt-fill text-warning me-2"></i> Church Lane, Saxby All Saints, DN20 0QE
+          </p>
+          <p class="small text-white-50 mb-3">
+            <i class="bi bi-envelope-fill text-warning me-2"></i> admin@saxbyvillagehall.co.uk
+          </p>
+          <a href="enquiries.html" class="btn btn-sm btn-outline-light w-100">Send an Enquiry</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; <span id="current-year"></span> Saxby All Saints Village Hall. All rights reserved.
+        </div>
+        <div class="d-flex gap-3 small">
+          <a href="terms.html">Hire Terms</a>
+          <a href="policies.html">Privacy &amp; Policies</a>
+          <a href="management.html">Trustees</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Gallery modal dynamic title & description injector
+    const galleryModal = document.getElementById('galleryModal');
+    if (galleryModal) {
+      galleryModal.addEventListener('show.bs.modal', function (event) {
+        const trigger = event.relatedTarget;
+        const title = trigger.getAttribute('data-img-title') || 'Saxby Village Hall';
+        const desc = trigger.getAttribute('data-img-desc') || '';
+        galleryModal.querySelector('.modal-title').textContent = title;
+        galleryModal.querySelector('.modal-display-title').textContent = title;
+        galleryModal.querySelector('.modal-display-desc').textContent = desc;
+      });
+    }
+  </script>
+</body>
+</html>

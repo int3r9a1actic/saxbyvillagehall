@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Availability &amp; Booking Calendar | Saxby All Saints Village Hall</title>
+  <meta name="description" content="View live availability and book hire slots for Saxby All Saints Village Hall using our integrated online booking calendar powered by Hall Booking Online.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span class="me-3"><i class="bi bi-geo-alt me-1 text-warning"></i> Church Lane, Saxby All Saints, DN20 0QE</span>
+        <span><i class="bi bi-clock me-1 text-warning"></i> Available for Hire 7 Days a Week</span>
+      </div>
+      <div>
+        <a href="mailto:admin@saxbyvillagehall.co.uk"><i class="bi bi-envelope me-1"></i> admin@saxbyvillagehall.co.uk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Bootstrap 5 Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-wrapper" href="index.html">
+        <div class="navbar-brand-icon">
+          <i class="bi bi-bank2"></i>
+        </div>
+        <div>
+          <div class="navbar-brand-title">Saxby All Saints</div>
+          <div class="navbar-brand-subtitle">Village Hall</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <!-- About Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu shadow" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="about.html"><i class="bi bi-info-circle"></i> Village Hall History &amp; Overview</a></li>
+              <li><a class="dropdown-item" href="facilities.html"><i class="bi bi-building-gear"></i> Facilities &amp; Specifications</a></li>
+              <li><a class="dropdown-item" href="management.html"><i class="bi bi-people"></i> Committee &amp; Trustees</a></li>
+              <li><a class="dropdown-item" href="gallery.html"><i class="bi bi-images"></i> Photo Gallery</a></li>
+              <li><a class="dropdown-item" href="policies.html"><i class="bi bi-shield-check"></i> Policies &amp; Governance</a></li>
+            </ul>
+          </li>
+
+          <!-- Bookings Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="bookingsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bookings
+            </a>
+            <ul class="dropdown-menu shadow" aria-labelledby="bookingsDropdown">
+              <li><a class="dropdown-item active" href="calendar.html"><i class="bi bi-calendar3"></i> Live Calendar &amp; Availability</a></li>
+              <li><a class="dropdown-item" href="charges.html"><i class="bi bi-tag"></i> Hire Charges &amp; Rates</a></li>
+              <li><a class="dropdown-item" href="enquiries.html"><i class="bi bi-pencil-square"></i> Booking Enquiry Form</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="terms.html"><i class="bi bi-file-text"></i> Terms &amp; Conditions</a></li>
+              <li><a class="dropdown-item" href="instructions.html"><i class="bi bi-card-checklist"></i> Hirer Instructions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-accent-custom" href="enquiries.html">
+              <i class="bi bi-calendar-check"></i> Book the Hall
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="hero-section hero-compact">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb page-breadcrumb mb-2">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Bookings</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Live Calendar</li>
+        </ol>
+      </nav>
+      <h1 class="hero-title mb-2">Live Availability Calendar</h1>
+      <p class="hero-lead mb-0">Powered by Hall Booking Online. Check current bookings and click to request reservations in real time.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section-padding">
+    <div class="container">
+
+      <!-- Instructions Ribbon -->
+      <div class="row g-3 mb-4">
+        <div class="col-md-4">
+          <div class="p-3 bg-white rounded-3 border shadow-sm h-100 d-flex align-items-center gap-3">
+            <div class="badge bg-primary-subtle text-primary rounded-circle p-3 fs-5">
+              <i class="bi bi-search"></i>
+            </div>
+            <div>
+              <strong class="d-block text-dark">1. Check Slot</strong>
+              <small class="text-muted">Browse month, week, or day views to verify hall vacancy.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-3 bg-white rounded-3 border shadow-sm h-100 d-flex align-items-center gap-3">
+            <div class="badge bg-warning-subtle text-dark rounded-circle p-3 fs-5">
+              <i class="bi bi-calendar-plus"></i>
+            </div>
+            <div>
+              <strong class="d-block text-dark">2. Request Slot</strong>
+              <small class="text-muted">Hall Booking Online opens an instant booking reservation request.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-3 bg-white rounded-3 border shadow-sm h-100 d-flex align-items-center gap-3">
+            <div class="badge bg-success-subtle text-success rounded-circle p-3 fs-5">
+              <i class="bi bi-check2-circle"></i>
+            </div>
+            <div>
+              <strong class="d-block text-dark">3. Confirmation</strong>
+              <small class="text-muted">Our booking officer will confirm your booking and issue access details.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Responsive Hall Booking Online Iframe Container -->
+      <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-5">
+        <div class="card-header bg-dark text-white d-flex flex-wrap justify-content-between align-items-center py-3 px-4">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-calendar-event text-warning fs-5"></i>
+            <span class="fw-semibold">Hall Booking Online Schedule &bull; Saxby All Saints Village Hall</span>
+          </div>
+          <div class="d-flex gap-2 mt-2 mt-sm-0">
+            <a href="charges.html" class="btn btn-sm btn-outline-light"><i class="bi bi-tag me-1"></i>View Rates</a>
+            <a href="enquiries.html" class="btn btn-sm btn-accent-custom"><i class="bi bi-send me-1"></i>Manual Enquiry</a>
+          </div>
+        </div>
+
+        <div class="card-body p-0">
+          <div class="iframe-container">
+            <!-- 
+              Replace the 'src' below with your live Hall Booking Online schedule URL:
+              e.g. src="https://www.hallbookingonline.co.uk/saxbyallsaints/"
+            -->
+            <iframe 
+              id="hallbooking-frame" 
+              src="https://www.hallbookingonline.co.uk/"
+              title="Hall Booking Online Schedule for Saxby All Saints Village Hall"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+
+            <!-- Fallback overlay shown if third-party iframe cookies/embeds are blocked -->
+            <noscript>
+              <div class="iframe-fallback-card m-4">
+                <i class="bi bi-exclamation-triangle text-warning fs-1 mb-3"></i>
+                <h4>JavaScript Required for Live Calendar</h4>
+                <p class="text-muted">Please enable JavaScript in your browser or visit Hall Booking Online directly to view live scheduling.</p>
+                <a href="https://www.hallbookingonline.co.uk/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom">Open Hall Booking Online Direct</a>
+              </div>
+            </noscript>
+          </div>
+        </div>
+        
+        <div class="card-footer bg-light p-3 text-muted small d-flex flex-column flex-sm-row justify-content-between align-items-center">
+          <span><i class="bi bi-info-circle me-1 text-primary"></i> Need special arrangement setup time? Remember to include preparation and clearing time in your booking request.</span>
+          <span class="mt-2 mt-sm-0"><a href="instructions.html" class="text-primary fw-semibold">Read Hirer Instructions &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Alternative Manual Callout -->
+      <div class="row align-items-center bg-light rounded-3 p-4 border g-3">
+        <div class="col-md-8">
+          <h5 class="mb-1">Prefer not to use Hall Booking Online?</h5>
+          <p class="text-muted small mb-0">You can also check availability or reserve provisional dates by emailing us or submitting our direct manual booking enquiry form.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a href="enquiries.html" class="btn btn-primary-custom">
+            <i class="bi bi-pencil-square me-1"></i> Fill Direct Form
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="navbar-brand-icon" style="width: 36px; height: 36px; font-size: 1.1rem;">
+              <i class="bi bi-bank2"></i>
+            </div>
+            <div>
+              <div class="fw-bold text-white fs-5">Saxby All Saints</div>
+              <div class="text-warning small text-uppercase fw-semibold" style="letter-spacing: 0.1em; font-size: 0.7rem;">Village Hall</div>
+            </div>
+          </div>
+          <p class="small text-white-50 mb-3">
+            A treasured rural community facility in North Lincolnshire, operated by volunteer trustees for public benefit, social fellowship, and private hire.
+          </p>
+          <div class="small text-white-50">
+            <i class="bi bi-shield-lock me-1 text-warning"></i> Registered Charity No. 100000 (Placeholder)
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events &amp; Clubs</a></li>
+            <li><a href="community.html">Community News</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h5>Bookings &amp; Hirers</h5>
+          <ul class="footer-links">
+            <li><a href="calendar.html">Live Availability (Hall Booking Online)</a></li>
+            <li><a href="charges.html">Hire Charges &amp; Pricing</a></li>
+            <li><a href="enquiries.html">Booking Enquiry Form</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="instructions.html">Hirer Guidelines &amp; Keys</a></li>
+            <li><a href="policies.html">Policies &amp; Safeguarding</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Contact &amp; Location</h5>
+          <p class="small text-white-50 mb-2">
+            <i class="bi bi-geo-alt-fill text-warning me-2"></i> Church Lane, Saxby All Saints, DN20 0QE
+          </p>
+          <p class="small text-white-50 mb-3">
+            <i class="bi bi-envelope-fill text-warning me-2"></i> admin@saxbyvillagehall.co.uk
+          </p>
+          <a href="enquiries.html" class="btn btn-sm btn-outline-light w-100">Send an Enquiry</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; <span id="current-year"></span> Saxby All Saints Village Hall. All rights reserved.
+        </div>
+        <div class="d-flex gap-3 small">
+          <a href="terms.html">Hire Terms</a>
+          <a href="policies.html">Privacy &amp; Policies</a>
+          <a href="management.html">Trustees</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

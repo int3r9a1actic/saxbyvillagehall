@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Enquiry Form | Saxby All Saints Village Hall</title>
+  <meta name="description" content="Submit a direct booking reservation request or hire enquiry for Saxby All Saints Village Hall in North Lincolnshire. Fast response within 24 hours.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span class="me-3"><i class="bi bi-geo-alt me-1 text-warning"></i> Church Lane, Saxby All Saints, DN20 0QE</span>
+        <span><i class="bi bi-clock me-1 text-warning"></i> Available for Hire 7 Days a Week</span>
+      </div>
+      <div>
+        <a href="mailto:admin@saxbyvillagehall.co.uk"><i class="bi bi-envelope me-1"></i> admin@saxbyvillagehall.co.uk</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Bootstrap 5 Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-wrapper" href="index.html">
+        <div class="navbar-brand-icon">
+          <i class="bi bi-bank2"></i>
+        </div>
+        <div>
+          <div class="navbar-brand-title">Saxby All Saints</div>
+          <div class="navbar-brand-subtitle">Village Hall</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <!-- About Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu shadow" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="about.html"><i class="bi bi-info-circle"></i> Village Hall History &amp; Overview</a></li>
+              <li><a class="dropdown-item" href="facilities.html"><i class="bi bi-building-gear"></i> Facilities &amp; Specifications</a></li>
+              <li><a class="dropdown-item" href="management.html"><i class="bi bi-people"></i> Committee &amp; Trustees</a></li>
+              <li><a class="dropdown-item" href="gallery.html"><i class="bi bi-images"></i> Photo Gallery</a></li>
+              <li><a class="dropdown-item" href="policies.html"><i class="bi bi-shield-check"></i> Policies &amp; Governance</a></li>
+            </ul>
+          </li>
+
+          <!-- Bookings Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="bookingsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bookings
+            </a>
+            <ul class="dropdown-menu shadow" aria-labelledby="bookingsDropdown">
+              <li><a class="dropdown-item" href="calendar.html"><i class="bi bi-calendar3"></i> Live Calendar &amp; Availability</a></li>
+              <li><a class="dropdown-item" href="charges.html"><i class="bi bi-tag"></i> Hire Charges &amp; Rates</a></li>
+              <li><a class="dropdown-item active" href="enquiries.html"><i class="bi bi-pencil-square"></i> Booking Enquiry Form</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="terms.html"><i class="bi bi-file-text"></i> Terms &amp; Conditions</a></li>
+              <li><a class="dropdown-item" href="instructions.html"><i class="bi bi-card-checklist"></i> Hirer Instructions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-accent-custom" href="enquiries.html">
+              <i class="bi bi-calendar-check"></i> Book the Hall
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="hero-section hero-compact">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb page-breadcrumb mb-2">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Bookings</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Booking Enquiry</li>
+        </ol>
+      </nav>
+      <h1 class="hero-title mb-2">Booking Enquiry Form</h1>
+      <p class="hero-lead mb-0">Complete the details below to request a reservation or obtain a customized quote for your event.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Form Column -->
+        <div class="col-lg-8">
+          <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border">
+            
+            <!-- Success / Mock Feedback Banner -->
+            <div id="formFeedback" class="alert alert-success d-none mb-4 p-4 rounded-3" role="alert">
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-check-circle-fill fs-2"></i>
+                <div>
+                  <h5 class="alert-heading fw-bold mb-1">Enquiry Successfully Submitted!</h5>
+                  <p class="mb-0 small">
+                    Thank you for contacting Saxby All Saints Village Hall. Our booking coordinator will review your requested date against the hall diary and reply within 24 hours.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <form class="needs-validation" novalidate data-mock-submit="true" data-feedback-target="formFeedback">
+              
+              <!-- Section 1: Contact Details -->
+              <h4 class="h5 text-primary mb-3"><i class="bi bi-person-circle me-2"></i>1. Your Contact Information</h4>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="fullName" placeholder="e.g. John Smith" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="emailAddress" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phoneNumber" class="form-label">Telephone / Mobile <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="phoneNumber" placeholder="e.g. 07123 456789" required>
+                  <div class="invalid-feedback">Please provide a contact phone number.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="postcode" class="form-label">Postcode <span class="text-muted">(For resident rate check)</span></label>
+                  <input type="text" class="form-control" id="postcode" placeholder="e.g. DN20 0QE">
+                </div>
+
+                <div class="col-12">
+                  <label for="organization" class="form-label">Organisation / Club Name <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" id="organization" placeholder="e.g. Saxby History Society or Private Hirer">
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <!-- Section 2: Event Details -->
+              <h4 class="h5 text-primary mb-3"><i class="bi bi-calendar-event me-2"></i>2. Event Date &amp; Timings</h4>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label for="eventType" class="form-label">Event Nature / Type <span class="text-danger">*</span></label>
+                  <select class="form-select" id="eventType" required>
+                    <option value="" selected disabled>Choose event type...</option>
+                    <option value="private-party">Private Birthday / Anniversary Party</option>
+                    <option value="childrens-party">Children's Party (Under 12)</option>
+                    <option value="wedding">Wedding Reception / Ceremony</option>
+                    <option value="community-club">Regular Club / Fitness Class</option>
+                    <option value="meeting">Business Meeting / AGM</option>
+                    <option value="fundraiser">Fundraiser / Public Exhibition</option>
+                    <option value="other">Other Occasion</option>
+                  </select>
+                  <div class="invalid-feedback">Please select your event category.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="eventDate" class="form-label">Preferred Date <span class="text-danger">*</span></label>
+                  <input type="date" class="form-control" id="eventDate" required>
+                  <div class="invalid-feedback">Please pick a proposed date.</div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                  <label for="startTime" class="form-label">Start Time <span class="text-danger">*</span></label>
+                  <input type="time" class="form-control" id="startTime" required>
+                  <div class="form-text small">Include setup time.</div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                  <label for="endTime" class="form-label">End Time <span class="text-danger">*</span></label>
+                  <input type="time" class="form-control" id="endTime" required>
+                  <div class="form-text small">Include cleaning time.</div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                  <label for="guestCount" class="form-label">Est. Attendance <span class="text-danger">*</span></label>
+                  <input type="number" class="form-control" id="guestCount" min="1" max="100" placeholder="Max 100" required>
+                  <div class="invalid-feedback">Please provide guest numbers (max 100).</div>
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <!-- Section 3: Facilities Required -->
+              <h4 class="h5 text-primary mb-3"><i class="bi bi-gear-wide-connected me-2"></i>3. Facilities &amp; Equipment Needed</h4>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="facilityKitchen" checked>
+                    <label class="form-check-label small" for="facilityKitchen">
+                      Catering Kitchen &amp; Dishwasher Use
+                    </label>
+                  </div>
+                  <div class="form-check mt-2">
+                    <input class="form-check-input" type="checkbox" id="facilitySound">
+                    <label class="form-check-label small" for="facilitySound">
+                      Sound PA System &amp; Wireless Microphone
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="facilityProjector">
+                    <label class="form-check-label small" for="facilityProjector">
+                      Projector &amp; Presentation Screen
+                    </label>
+                  </div>
+                  <div class="form-check mt-2">
+                    <input class="form-check-input" type="checkbox" id="facilityTables">
+                    <label class="form-check-label small" for="facilityTables">
+                      Folding Tables &amp; Banquet Chairs
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label class="form-label d-block">Will alcohol be served or consumed?</label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="alcoholOption" id="alcoholNone" value="none" checked>
+                    <label class="form-check-label small" for="alcoholNone">No alcohol</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="alcoholOption" id="alcoholBYO" value="byo">
+                    <label class="form-check-label small" for="alcoholBYO">Yes, Bring Your Own (Free / Complimentary)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="alcoholOption" id="alcoholTEN" value="ten">
+                    <label class="form-check-label small" for="alcoholTEN">Yes, Sold (Applying for a TEN License)</label>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label for="specialRequests" class="form-label">Special Requirements or Additional Notes</label>
+                  <textarea class="form-control" id="specialRequests" rows="3" placeholder="Tell us more about your event layout, catering plans, or any questions..."></textarea>
+                </div>
+              </div>
+
+              <!-- Terms Acceptance -->
+              <div class="mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                  <label class="form-check-label small" for="termsCheck">
+                    I confirm I am over 21 years old and agree to the <a href="terms.html" target="_blank">Standard Conditions of Hire</a>.
+                  </label>
+                  <div class="invalid-feedback">You must accept the terms before submitting.</div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-accent-custom btn-lg w-100">
+                <i class="bi bi-send-fill me-2"></i> Submit Booking Enquiry
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar FAQs & Fast Info -->
+        <div class="col-lg-4">
+          <div class="bg-white p-4 rounded-3 shadow-sm border mb-4">
+            <h5 class="h6 text-uppercase fw-bold text-muted mb-3">Booking Assistance</h5>
+            <p class="small text-muted mb-3">
+              Need to check an urgent date or have specific catering access requirements? Get in touch with our volunteer booking team by email:
+            </p>
+            <div class="d-flex align-items-center gap-3 p-3 bg-light rounded">
+              <i class="bi bi-envelope-at-fill fs-3 text-primary"></i>
+              <div>
+                <small class="text-muted d-block">Bookings Manager (Lisa James)</small>
+                <a href="mailto:bookings@saxbyvillagehall.co.uk" class="fw-bold text-primary text-decoration-none small">bookings@saxbyvillagehall.co.uk</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-4 rounded-3 shadow-sm border">
+            <h5 class="h6 text-uppercase fw-bold text-muted mb-3">Booking FAQ</h5>
+            <div class="accordion accordion-flush" id="bookingFaqAccordion">
+              <div class="accordion-item">
+                <h6 class="accordion-header">
+                  <button class="accordion-button collapsed px-0 py-2 small fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    When is full payment required?
+                  </button>
+                </h6>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#bookingFaqAccordion">
+                  <div class="accordion-body px-0 py-2 text-muted small">
+                    A provisional slot is held for 7 days. Full payment plus the refundable security deposit must be cleared 14 days before your event.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h6 class="accordion-header">
+                  <button class="accordion-button collapsed px-0 py-2 small fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Can we visit the hall first?
+                  </button>
+                </h6>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#bookingFaqAccordion">
+                  <div class="accordion-body px-0 py-2 text-muted small">
+                    Yes! We warmly welcome prospective hirers to arrange an in-person viewing of the main hall and kitchen with a trustee.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h6 class="accordion-header">
+                  <button class="accordion-button collapsed px-0 py-2 small fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Are bouncy castles allowed?
+                  </button>
+                </h6>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#bookingFaqAccordion">
+                  <div class="accordion-body px-0 py-2 text-muted small">
+                    Low-height indoor inflatables (under 9ft ceiling clearance) are permitted provided the hire company furnishes valid &pound;5M public liability insurance.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="navbar-brand-icon" style="width: 36px; height: 36px; font-size: 1.1rem;">
+              <i class="bi bi-bank2"></i>
+            </div>
+            <div>
+              <div class="fw-bold text-white fs-5">Saxby All Saints</div>
+              <div class="text-warning small text-uppercase fw-semibold" style="letter-spacing: 0.1em; font-size: 0.7rem;">Village Hall</div>
+            </div>
+          </div>
+          <p class="small text-white-50 mb-3">
+            A treasured rural community facility in North Lincolnshire, operated by volunteer trustees for public benefit, social fellowship, and private hire.
+          </p>
+          <div class="small text-white-50">
+            <i class="bi bi-shield-lock me-1 text-warning"></i> Registered Charity No. 100000 (Placeholder)
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events &amp; Clubs</a></li>
+            <li><a href="community.html">Community News</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h5>Bookings &amp; Hirers</h5>
+          <ul class="footer-links">
+            <li><a href="calendar.html">Live Availability (Hall Booking Online)</a></li>
+            <li><a href="charges.html">Hire Charges &amp; Pricing</a></li>
+            <li><a href="enquiries.html">Booking Enquiry Form</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="instructions.html">Hirer Guidelines &amp; Keys</a></li>
+            <li><a href="policies.html">Policies &amp; Safeguarding</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Contact &amp; Location</h5>
+          <p class="small text-white-50 mb-2">
+            <i class="bi bi-geo-alt-fill text-warning me-2"></i> Church Lane, Saxby All Saints, DN20 0QE
+          </p>
+          <p class="small text-white-50 mb-3">
+            <i class="bi bi-envelope-fill text-warning me-2"></i> admin@saxbyvillagehall.co.uk
+          </p>
+          <a href="enquiries.html" class="btn btn-sm btn-outline-light w-100">Send an Enquiry</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; <span id="current-year"></span> Saxby All Saints Village Hall. All rights reserved.
+        </div>
+        <div class="d-flex gap-3 small">
+          <a href="terms.html">Hire Terms</a>
+          <a href="policies.html">Privacy &amp; Policies</a>
+          <a href="management.html">Trustees</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
