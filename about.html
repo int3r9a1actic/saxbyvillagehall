@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About the Village Hall &amp; Heritage | Saxby All Saints Village Hall</title>
-  <meta name="description" content="Discover the history, rural heritage, and charitable mission of Saxby All Saints Village Hall in North Lincolnshire. From 19th-century origins to present day.">
+  <meta name="description" content="Discover the history, 1846 village schoolhouse origins, Hope-Barton family patronage, and charitable mission of Saxby All Saints Village Hall (Charity No. 521977).">
   
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -127,7 +127,10 @@
             Saxby All Saints is a picturesque estate village situated in the lowlands below the western ridge of the Lincolnshire Wolds. Celebrated for its red brick cottages, mature beech trees, and Grade II listed architecture, the village has preserved its peaceful rural character for generations.
           </p>
           <p class="text-muted">
-            The Village Hall was originally established in the late Victorian era through the generosity of local estate benefactors as an educational reading room and parish meeting house. In the post-war era, trustees took formal custody of the building, securing its future as an independent registered charity dedicated to the welfare and enrichment of all villagers.
+            The hall was originally constructed in 1846 as the village school, founded and funded through the generous patronage of the prominent local landed Hope-Barton family, who shaped much of the surrounding estate. For over a century, the schoolhouse served at the very heart of parish life, educating and nurturing generations of local children until its closure in 1961.
+          </p>
+          <p class="text-muted">
+            Following the school's closure, the historic Victorian building was gifted to the village community. Through the dedication of resident trustees, it was formally transitioned into a perpetual, community-owned village hall and registered charity (No. 521977)—safeguarding this cherished landmark as a welcoming gathering place for social events, celebrations, and community welfare.
           </p>
           <div class="d-flex gap-3 mt-4">
             <a href="facilities.html" class="btn btn-primary-custom"><i class="bi bi-door-open me-1"></i> Tour Facilities</a>
@@ -136,15 +139,81 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="p-4 bg-white rounded-4 shadow-sm border">
-            <div class="media-placeholder rounded-3 mb-3" style="min-height: 260px;">
-              <i class="bi bi-bank2 fs-1 text-primary"></i>
-              <h5 class="fw-bold mt-2">Historic Village Hall Exterior</h5>
-              <p class="small text-muted mb-0">Traditional Lincolnshire brick &amp; slate building lovingly maintained since 1888.</p>
+          <!-- About Photo Carousel Card -->
+          <div class="card border-0 hero-carousel-card shadow-sm rounded-4 overflow-hidden">
+            
+            <div id="aboutHallCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+              
+              <!-- Carousel Indicators -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#aboutHallCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Historic Exterior"></button>
+                <button type="button" data-bs-target="#aboutHallCarousel" data-bs-slide-to="1" aria-label="Slide 2: Main Hall Interior"></button>
+                <button type="button" data-bs-target="#aboutHallCarousel" data-bs-slide-to="2" aria-label="Slide 3: Saxby Village Setting"></button>
+              </div>
+
+              <!-- Carousel Inner Slides -->
+              <div class="carousel-inner">
+                
+                <!-- Slide 1: Historic Exterior -->
+                <div class="carousel-item active" data-bs-interval="4500">
+                  <img src="assets/images/hero-exterior.jpg" class="d-block w-100" alt="Saxby All Saints Historic Village Hall Exterior" loading="eager">
+                  <div class="carousel-caption">
+                    <span class="badge bg-warning text-dark fw-bold mb-2">
+                      <i class="bi bi-bank2 me-1"></i>Historic Schoolhouse (Est. 1846)
+                    </span>
+                    <h5 class="h6 fw-bold mb-1 text-white">Victorian Brick Facade &amp; Grounds</h5>
+                    <p class="small text-white-50 mb-0">Built in 1846 under the patronage of the Hope-Barton family, now preserved for village life</p>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Main Hall Interior -->
+                <div class="carousel-item" data-bs-interval="4500">
+                  <img src="assets/images/hero-interior.jpg" class="d-block w-100" alt="Saxby All Saints Village Hall Interior" loading="lazy">
+                  <div class="carousel-caption">
+                    <span class="badge bg-warning text-dark fw-bold mb-2">
+                      <i class="bi bi-stars me-1"></i>Community Gathering Hall
+                    </span>
+                    <h5 class="h6 fw-bold mb-1 text-white">Spacious &amp; Welcoming Interior</h5>
+                    <p class="small text-white-50 mb-0">High exposed timber beams, sprung oak dance floor, and comfortable seating for up to 70 guests</p>
+                  </div>
+                </div>
+
+                <!-- Slide 3: Saxby Village Setting -->
+                <div class="carousel-item" data-bs-interval="4500">
+                  <img src="assets/images/village-setting.jpg" class="d-block w-100" alt="Saxby All Saints Conservation Village Setting" loading="lazy">
+                  <div class="carousel-caption">
+                    <span class="badge bg-warning text-dark fw-bold mb-2">
+                      <i class="bi bi-tree-fill me-1"></i>Conservation Village
+                    </span>
+                    <h5 class="h6 fw-bold mb-1 text-white">Idyllic Church Lane Setting</h5>
+                    <p class="small text-white-50 mb-0">Picturesque estate village with traditional cottages below the peaceful Lincolnshire Wolds</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Carousel Navigation Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#aboutHallCarousel" data-bs-slide="prev" aria-label="Previous Photo">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#aboutHallCarousel" data-bs-slide="next" aria-label="Next Photo">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
             </div>
-            <div class="p-2 bg-light rounded text-center small text-muted">
-              <i class="bi bi-award-fill text-warning me-1"></i> Designated heritage asset in the Saxby All Saints Conservation Area.
+
+            <!-- Card Footer -->
+            <div class="card-footer bg-white p-3 d-flex justify-content-between align-items-center">
+              <span class="small text-muted">
+                <i class="bi bi-award-fill text-warning me-1"></i> Designated heritage asset in Conservation Area
+              </span>
+              <a href="gallery.html" class="small fw-semibold text-primary text-decoration-none">
+                Full Gallery &rarr;
+              </a>
             </div>
+
           </div>
         </div>
       </div>
@@ -153,7 +222,7 @@
       <div class="section-title-wrap text-center my-5">
         <span class="section-subtitle">Charitable Purpose</span>
         <h2 class="section-title">Our Role in the Community</h2>
-        <p class="section-lead mx-auto">Operating as a registered non-profit trust under Scheme of the Charity Commission.</p>
+        <p class="section-lead mx-auto">Operating as a registered non-profit trust (Charity No. 521977) under Scheme of the Charity Commission.</p>
       </div>
 
       <div class="row g-4 mb-5">
@@ -189,33 +258,33 @@
         <div class="row g-4">
           <div class="col-md-3">
             <div class="p-3 bg-light rounded-3 border h-100">
-              <span class="badge bg-primary text-white fw-bold mb-2">1888</span>
-              <h5 class="h6 fw-bold">Reading Room Founded</h5>
-              <p class="text-muted small mb-0">Commissioned by the local landed estate to provide adult education, newspapers, and community lecture space.</p>
+              <span class="badge bg-primary text-white fw-bold mb-2">1846</span>
+              <h5 class="h6 fw-bold">Village Schoolhouse Built</h5>
+              <p class="text-muted small mb-0">Built as the village schoolhouse under the patronage of the prominent local landed Hope-Barton family to educate generations of local children.</p>
             </div>
           </div>
 
           <div class="col-md-3">
             <div class="p-3 bg-light rounded-3 border h-100">
-              <span class="badge bg-primary text-white fw-bold mb-2">1952</span>
-              <h5 class="h6 fw-bold">Charitable Trust Deed</h5>
-              <p class="text-muted small mb-0">Formally conveyed into a perpetual charitable trust governed by elected resident trustees for public benefit.</p>
+              <span class="badge bg-primary text-white fw-bold mb-2">1961</span>
+              <h5 class="h6 fw-bold">School Closure &amp; Charity Trust</h5>
+              <p class="text-muted small mb-0">School closure and transition into a community-owned village hall registered charity (No. 521977), gifted for the perpetual benefit of the village.</p>
             </div>
           </div>
 
           <div class="col-md-3">
             <div class="p-3 bg-light rounded-3 border h-100">
               <span class="badge bg-primary text-white fw-bold mb-2">2014</span>
-              <h5 class="h6 fw-bold">Accessibility &amp; Roof Renovation</h5>
-              <p class="text-muted small mb-0">National Lottery Community Grant funded slate re-roofing, step-free entrance ramps, and modern accessible WCs.</p>
+              <h5 class="h6 fw-bold">Restoration &amp; Accessibility</h5>
+              <p class="text-muted small mb-0">Modern renovations, slate roof restoration, step-free entrance ramp to the front door, and dedicated accessible WC facilities.</p>
             </div>
           </div>
 
           <div class="col-md-3">
             <div class="p-3 bg-light rounded-3 border h-100">
-              <span class="badge bg-accent text-dark fw-bold mb-2" style="background-color: var(--color-accent);">2024 &ndash; Today</span>
-              <h5 class="h6 fw-bold">Modern Digital &amp; Kitchen Era</h5>
-              <p class="text-muted small mb-0">Installation of commercial catering appliances, fibre broadband, energy-efficient heating, and online booking with Hall Booking Online.</p>
+              <span class="badge bg-accent text-dark fw-bold mb-2" style="background-color: var(--color-accent);">Today</span>
+              <h5 class="h6 fw-bold">Active Community Hub</h5>
+              <p class="text-muted small mb-0">Modern digital booking with Hall Booking Online, kitchen upgrades (oven, hobs, dishwasher, fridge), fast fibre broadband, and active community hub.</p>
             </div>
           </div>
         </div>
@@ -242,7 +311,7 @@
             A treasured rural community facility in North Lincolnshire, operated by volunteer trustees for public benefit, social fellowship, and private hire.
           </p>
           <div class="small text-white-50">
-            <i class="bi bi-shield-lock me-1 text-warning"></i> Registered Charity No. 100000 (Placeholder)
+            <i class="bi bi-shield-lock me-1 text-warning"></i> Registered Charity No. 521977
           </div>
         </div>
 

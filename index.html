@@ -114,7 +114,7 @@
           </div>
           <h1 class="hero-title">A Warm, Welcoming Venue for Every Occasion</h1>
           <p class="hero-lead">
-            Nestled in the picturesque conservation village of Saxby All Saints, our historic village hall offers modern catering amenities, full accessibility, and flexible hire for weddings, family parties, fitness classes, and community gatherings.
+            Nestled in the picturesque conservation village of Saxby All Saints, our historic village hall offers well-equipped kitchen amenities, full accessibility, and flexible hire for weddings, family parties, fitness classes, and community gatherings.
           </p>
           <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
             <a href="enquiries.html" class="btn btn-accent-custom btn-lg">
@@ -126,37 +126,81 @@
           </div>
         </div>
         <div class="col-lg-5">
-          <div class="custom-card p-4 bg-white text-dark shadow-lg">
-            <h3 class="h4 mb-3 text-dark"><i class="bi bi-lightning-charge text-warning me-2"></i>Quick Booking Check</h3>
-            <p class="text-muted small mb-4">Plan your upcoming event in three quick steps. Check live availability or download our hire packet.</p>
+          <!-- Hero Photo Carousel Card -->
+          <div class="card border-0 hero-carousel-card">
             
-            <div class="list-group list-group-flush mb-4 small">
-              <a href="calendar.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
-                <div>
-                  <strong class="d-block text-dark">1. Live Availability</strong>
-                  <span class="text-muted">Check real-time online schedule</span>
+            <div id="villageHallHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4500">
+              
+              <!-- Carousel Indicators -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#villageHallHeroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1: Exterior &amp; Grounds"></button>
+                <button type="button" data-bs-target="#villageHallHeroCarousel" data-bs-slide-to="1" aria-label="Slide 2: Main Hall Interior"></button>
+                <button type="button" data-bs-target="#villageHallHeroCarousel" data-bs-slide-to="2" aria-label="Slide 3: Modern Kitchen"></button>
+              </div>
+
+              <!-- Carousel Inner Slides -->
+              <div class="carousel-inner">
+                
+                <!-- Slide 1: Exterior Gardens -->
+                <div class="carousel-item active" data-bs-interval="4500">
+                  <img src="assets/images/hero-exterior.jpg" class="d-block w-100" alt="Saxby All Saints Village Hall Exterior &amp; Grounds" loading="eager">
+                  <div class="carousel-caption">
+                    <span class="badge bg-warning text-dark fw-bold mb-2">
+                      <i class="bi bi-geo-alt-fill me-1"></i>Historic Grounds
+                    </span>
+                    <h5 class="h6 fw-bold mb-1 text-white">Charming Brick Facade &amp; Gardens</h5>
+                    <p class="small text-white-50 mb-0">Peaceful rural setting with landscaped lawn and private parking on Church Lane</p>
+                  </div>
                 </div>
-                <i class="bi bi-arrow-right-circle text-success fs-5"></i>
-              </a>
-              <a href="charges.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
-                <div>
-                  <strong class="d-block text-dark">2. Transparent Pricing</strong>
-                  <span class="text-muted">Hourly resident &amp; visitor rates</span>
+
+                <!-- Slide 2: Main Hall Interior -->
+                <div class="carousel-item" data-bs-interval="4500">
+                  <img src="assets/images/hero-interior.jpg" class="d-block w-100" alt="Saxby All Saints Village Hall Main Hall Interior" loading="lazy">
+                  <div class="carousel-caption">
+                    <span class="badge bg-warning text-dark fw-bold mb-2">
+                      <i class="bi bi-stars me-1"></i>Main Hall Interior
+                    </span>
+                    <h5 class="h6 fw-bold mb-1 text-white">Spacious Function &amp; Party Space</h5>
+                    <p class="small text-white-50 mb-0">High exposed timber beams, sprung oak dance floor, and seating for up to 70 guests</p>
+                  </div>
                 </div>
-                <i class="bi bi-arrow-right-circle text-success fs-5"></i>
-              </a>
-              <a href="enquiries.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
-                <div>
-                  <strong class="d-block text-dark">3. Booking Enquiry</strong>
-                  <span class="text-muted">Direct coordinator reservation form</span>
+
+                <!-- Slide 3: Kitchen & Amenities -->
+                <div class="carousel-item" data-bs-interval="4500">
+                  <img src="assets/images/hero-kitchen.jpg" class="d-block w-100" alt="Saxby All Saints Village Hall Kitchen" loading="lazy">
+                  <div class="carousel-caption">
+                    <span class="badge bg-warning text-dark fw-bold mb-2">
+                      <i class="bi bi-cup-hot-fill me-1"></i>Kitchen Amenities
+                    </span>
+                    <h5 class="h6 fw-bold mb-1 text-white">Well-Equipped Kitchen</h5>
+                    <p class="small text-white-50 mb-0">Equipped with an oven and hobs, dishwasher, fridge, ample cutlery and food prep surfaces</p>
+                  </div>
                 </div>
-                <i class="bi bi-arrow-right-circle text-success fs-5"></i>
+
+              </div>
+
+              <!-- Carousel Navigation Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#villageHallHeroCarousel" data-bs-slide="prev" aria-label="Previous Photo">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#villageHallHeroCarousel" data-bs-slide="next" aria-label="Next Photo">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+
+            <!-- Card Footer Quick Link -->
+            <div class="card-footer bg-white p-3 d-flex justify-content-between align-items-center">
+              <span class="small text-muted">
+                <i class="bi bi-images text-primary me-1"></i> Virtual Hall Tour
+              </span>
+              <a href="gallery.html" class="small fw-semibold text-primary text-decoration-none">
+                Explore Full Gallery &rarr;
               </a>
             </div>
 
-            <a href="facilities.html" class="btn btn-outline-custom w-100">
-              <i class="bi bi-binoculars me-1"></i> Explore Facilities &amp; Equipment
-            </a>
           </div>
         </div>
       </div>
@@ -176,32 +220,32 @@
         <div class="col-md-6 col-lg-3">
           <div class="feature-box">
             <div class="icon"><i class="bi bi-people-fill"></i></div>
-            <h4 class="h5">Up to 100 Capacity</h4>
-            <p class="text-muted small mb-0">Spacious hall accommodating standing receptions, seated dinners, presentations, and fitness classes.</p>
+            <h4 class="h5">Capacity of 70</h4>
+            <p class="text-muted small mb-0">Spacious hall accommodating up to 70 people for parties, functions, meetings, and classes.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-box">
             <div class="icon"><i class="bi bi-cup-hot-fill"></i></div>
-            <h4 class="h5">Commercial Kitchen</h4>
-            <p class="text-muted small mb-0">Equipped with dual ovens, commercial dishwasher, warming urns, ample crockery, and food prep surfaces.</p>
+            <h4 class="h5">Well-Equipped Kitchen</h4>
+            <p class="text-muted small mb-0">Equipped with an oven and hobs, dishwasher, fridge, ample cutlery and food prep surfaces.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-box">
             <div class="icon"><i class="bi bi-universal-access-circle"></i></div>
-            <h4 class="h5">Accessible For All</h4>
-            <p class="text-muted small mb-0">Level threshold access, wide double entrance doors, and dedicated accessible WC amenities.</p>
+            <h4 class="h5">Fully Accessible</h4>
+            <p class="text-muted small mb-0">Full accessibility with ramp to the front door and dedicated accessible WC facilities.</p>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
           <div class="feature-box">
             <div class="icon"><i class="bi bi-wifi"></i></div>
-            <h4 class="h5">Audio &amp; High-Speed WiFi</h4>
-            <p class="text-muted small mb-0">Fibre broadband, sound amplification system, digital projector screen, and wireless microphone setup.</p>
+            <h4 class="h5">Fibre, Sound &amp; Screen</h4>
+            <p class="text-muted small mb-0">Fast fibre broadband, our own PA system with wireless microphone, and a projector screen.</p>
           </div>
         </div>
       </div>
@@ -309,7 +353,7 @@
             A treasured rural community facility in North Lincolnshire, operated by volunteer trustees for public benefit, social fellowship, and private hire.
           </p>
           <div class="small text-white-50">
-            <i class="bi bi-shield-lock me-1 text-warning"></i> Registered Charity No. 100000 (Placeholder)
+            <i class="bi bi-shield-lock me-1 text-warning"></i> Registered Charity No. 521977
           </div>
         </div>
 
