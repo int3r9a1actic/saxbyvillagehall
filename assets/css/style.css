@@ -129,24 +129,47 @@ a:hover {
 }
 
 .navbar-brand-logo {
-  height: 64px;
+  height: 60px;
   width: auto;
+  max-width: 150px;
   display: block;
   object-fit: contain;
   transition: height var(--transition-fast), transform var(--transition-fast);
 }
 
 .navbar-custom.navbar-scrolled .navbar-brand-logo {
-  height: 52px;
+  height: 48px;
 }
 
 .navbar-brand-wrapper:hover .navbar-brand-logo {
   transform: scale(1.03);
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
+  .navbar-custom {
+    padding: 0.45rem 0;
+  }
+
   .navbar-brand-logo {
-    height: 54px;
+    height: 48px;
+  }
+
+  .navbar-custom.navbar-scrolled .navbar-brand-logo {
+    height: 42px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-custom {
+    padding: 0.35rem 0;
+  }
+
+  .navbar-brand-logo {
+    height: 42px;
+  }
+
+  .navbar-custom.navbar-scrolled .navbar-brand-logo {
+    height: 38px;
   }
 }
 
@@ -782,10 +805,21 @@ a:hover {
 }
 
 .footer-brand-logo {
-  height: 60px;
+  height: 56px;
   width: auto;
+  max-width: 140px;
   display: block;
   object-fit: contain;
+}
+
+@media (max-width: 575.98px) {
+  .footer-brand-logo-wrap {
+    padding: 0.45rem 0.75rem;
+  }
+
+  .footer-brand-logo {
+    height: 46px;
+  }
 }
 
 .footer-custom h5 {
