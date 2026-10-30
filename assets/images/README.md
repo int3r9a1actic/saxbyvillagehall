@@ -9,6 +9,6 @@ Store all high-resolution images, logos, and gallery assets for Saxby All Saints
 - `meeting-room.jpg` - Committee meeting room layout
 - `grounds-exterior.jpg` - Garden and outdoor parking spaces
 - `village-setting.jpg` - Picturesque Church Lane and Saxby All Saints conservation village setting
-- `village-hall-logo.png` - Transparent PNG brand logo
+- `village-hall.png` - Transparent PNG brand logo
 
 *Optimized for flat-file static hosting on SiteGround with WebP or compressed JPG/PNG formats.*

@@ -6,7 +6,7 @@
   <title>Events &amp; Regular Activities | Saxby All Saints Village Hall</title>
   <meta name="description" content="Discover upcoming special events and regular weekly & monthly activities at Saxby All Saints Village Hall, including the Halloween Party, Christmas Ceilidh, Wreath Workshop, Quiz, and clubs.">
   
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+  <link rel="icon" type="image/png" href="assets/images/village-hall.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -30,13 +30,7 @@
   <nav class="navbar navbar-expand-lg navbar-custom sticky-top" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand navbar-brand-wrapper" href="index.html">
-        <div class="navbar-brand-icon">
-          <i class="bi bi-bank2"></i>
-        </div>
-        <div>
-          <div class="navbar-brand-title">Saxby All Saints</div>
-          <div class="navbar-brand-subtitle">Village Hall</div>
-        </div>
+        <img src="assets/images/village-hall.png" alt="Saxby All Saints Village Hall" class="navbar-brand-logo">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,12 +133,25 @@
           <!-- Event 1: Halloween Party -->
           <div class="col-md-6 col-lg-4">
             <div class="custom-card">
+              <div class="event-card-media" role="button" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/halloweenparty.jpg" data-poster-title="Saxby All Saints Halloween Party">
+                <img src="assets/images/halloweenparty.jpg" class="event-poster-img" alt="Saxby All Saints Halloween Party Poster" loading="eager">
+                <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 shadow-sm fw-bold">31 Oct</span>
+                <span class="badge bg-success position-absolute top-0 end-0 m-3 shadow-sm fw-bold">Free Entry</span>
+                <div class="event-poster-overlay">
+                  <span class="small text-white"><i class="bi bi-cup-straw me-1 text-warning"></i>Cocktail on Arrival &amp; Bar Open</span>
+                  <button type="button" class="event-poster-zoom-btn" tabindex="-1">
+                    <i class="bi bi-zoom-in"></i> View Poster
+                  </button>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-warning text-dark fw-bold px-2 py-1">
                     <i class="bi bi-moon-stars me-1"></i> Halloween
                   </span>
-                  <span class="badge bg-success-subtle text-success fw-bold px-2 py-1">Free Entry</span>
+                  <button type="button" class="btn btn-link p-0 text-decoration-none small fw-semibold text-primary" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/halloweenparty.jpg" data-poster-title="Saxby All Saints Halloween Party">
+                    <i class="bi bi-file-earmark-image me-1"></i>View Flyer
+                  </button>
                 </div>
                 
                 <h3 class="h5 mb-2 text-primary-dark">Saxby All Saints Halloween Party</h3>
@@ -154,18 +161,23 @@
                     <i class="bi bi-calendar3 text-primary me-2"></i><strong>31 October 2026</strong>
                   </div>
                   <div>
-                    <i class="bi bi-clock text-primary me-2"></i>5:00 PM &ndash; 11:00 PM
+                    <i class="bi bi-clock text-primary me-2"></i>7:00 PM &ndash; 11:00 PM
                   </div>
                 </div>
 
                 <p class="text-secondary small flex-grow-1">
-                  Features free entry with kids welcome at the start of the evening. Enjoy a spooky cocktail on arrival, fun party games, music, and dancing throughout the night!
+                  Free entry! Enjoy a Halloween cocktail on arrival, party games, music, dancing, and an open bar. Fancy dress is optional, with a small prize for the best outfit!
                 </p>
 
                 <div class="pt-3 border-top mt-auto">
                   <div class="d-flex justify-content-between align-items-center">
-                    <span class="small text-muted"><i class="bi bi-cup-straw text-warning me-1"></i> Cocktail on arrival</span>
-                    <a href="contact.html" class="btn btn-outline-custom btn-sm">Event Info</a>
+                    <span class="small text-muted"><i class="bi bi-cup-straw text-warning me-1"></i> Cocktail &amp; Bar Open</span>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/halloweenparty.jpg" data-poster-title="Saxby All Saints Halloween Party" title="View Full Poster">
+                        <i class="bi bi-file-earmark-image"></i>
+                      </button>
+                      <a href="contact.html" class="btn btn-outline-custom btn-sm">Event Info</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -736,15 +748,9 @@
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-4">
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <div class="navbar-brand-icon" style="width: 36px; height: 36px; font-size: 1.1rem;">
-              <i class="bi bi-bank2"></i>
-            </div>
-            <div>
-              <div class="fw-bold text-white fs-5">Saxby All Saints</div>
-              <div class="text-warning small text-uppercase fw-semibold" style="letter-spacing: 0.1em; font-size: 0.7rem;">Village Hall</div>
-            </div>
-          </div>
+          <a href="index.html" class="footer-brand-logo-wrap mb-3" aria-label="Saxby All Saints Village Hall Home">
+            <img src="assets/images/village-hall.png" alt="Saxby All Saints Village Hall" class="footer-brand-logo" loading="lazy">
+          </a>
           <p class="small text-white-50 mb-3">
             A treasured rural community facility in North Lincolnshire, operated by volunteer trustees for public benefit, social fellowship, and private hire.
           </p>
