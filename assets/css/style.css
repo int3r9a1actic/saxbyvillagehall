@@ -820,3 +820,189 @@ a:hover {
     padding: 0.5rem;
   }
 }
+
+/* --- Hero Showcase Photo Carousel (#villageHallHeroCarousel) --- */
+.hero-carousel-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--color-surface);
+}
+
+.hero-carousel-card .carousel-item {
+  position: relative;
+  height: 380px;
+  background-color: var(--color-primary-dark);
+}
+
+@media (min-width: 992px) {
+  .hero-carousel-card .carousel-item {
+    height: 420px;
+  }
+}
+
+.hero-carousel-card .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-carousel-card .carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2.5rem 1.5rem 2.25rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(8, 28, 21, 0.7) 35%, rgba(8, 28, 21, 0.95) 100%);
+  text-align: left;
+  pointer-events: none; /* Allows clicks to pass through to indicators and controls */
+}
+
+.hero-carousel-card .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0.6rem;
+  left: 0;
+  z-index: 10;
+  margin-bottom: 0;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.hero-carousel-card .carousel-indicators [data-bs-target] {
+  width: 28px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  background-clip: padding-box;
+  box-sizing: content-box;
+  transition: all 0.3s ease;
+  margin: 0;
+  cursor: pointer;
+}
+
+.hero-carousel-card .carousel-indicators .active {
+  background-color: var(--color-accent);
+  width: 38px;
+}
+
+.hero-carousel-card .carousel-control-prev,
+.hero-carousel-card .carousel-control-next {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 45%;
+  bottom: auto;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: rgba(8, 28, 21, 0.75);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: 0.9;
+  transition: all 0.2s ease;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hero-carousel-card .carousel-control-prev {
+  left: 14px;
+}
+
+.hero-carousel-card .carousel-control-next {
+  right: 14px;
+}
+
+.hero-carousel-card .carousel-control-prev:hover,
+.hero-carousel-card .carousel-control-next:hover {
+  opacity: 1;
+  background: var(--color-primary-dark);
+  transform: translateY(-50%) scale(1.08);
+}
+
+/* --- Regular Event Poster Card Media --- */
+.event-card-media {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+  background-color: var(--color-surface-alt);
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+}
+
+.event-poster-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.custom-card:hover .event-poster-img {
+  transform: scale(1.06);
+}
+
+.event-poster-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 28, 21, 0.15) 0%, rgba(8, 28, 21, 0.8) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.custom-card:hover .event-poster-overlay,
+.event-card-media:focus-within .event-poster-overlay {
+  opacity: 1;
+}
+
+.event-poster-zoom-btn {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-primary-dark);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.event-poster-zoom-btn:hover {
+  background: var(--color-accent);
+  color: #111827;
+  transform: translateY(-1px);
+}
+
+/* Vector Themed Fallback Media for groups without uploaded posters */
+.event-media-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.event-media-placeholder.event-media-music {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.event-media-placeholder.event-media-fitness {
+  background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+}

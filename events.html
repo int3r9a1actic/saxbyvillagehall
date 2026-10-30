@@ -285,12 +285,25 @@
           <!-- Event 5: Christmas Market -->
           <div class="col-md-6 col-lg-4">
             <div class="custom-card">
+              <div class="event-card-media" role="button" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/christmasmarket.jpg" data-poster-title="Saxby All Saints Christmas Market">
+                <img src="assets/images/christmasmarket.jpg" class="event-poster-img" alt="Saxby All Saints Christmas Market Poster" loading="eager">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-3 shadow-sm fw-bold">13 Dec</span>
+                <span class="badge bg-success position-absolute top-0 end-0 m-3 shadow-sm fw-bold">Free Entry</span>
+                <div class="event-poster-overlay">
+                  <span class="small text-white"><i class="bi bi-gift me-1 text-warning"></i>Festive Shopping &amp; Treats</span>
+                  <button type="button" class="event-poster-zoom-btn" tabindex="-1">
+                    <i class="bi bi-zoom-in"></i> View Poster
+                  </button>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-info text-dark fw-bold px-2 py-1">
                     <i class="bi bi-gift me-1"></i> Festive Market
                   </span>
-                  <span class="badge bg-success-subtle text-success fw-bold px-2 py-1">Free Entry</span>
+                  <button type="button" class="btn btn-link p-0 text-decoration-none small fw-semibold text-primary" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/christmasmarket.jpg" data-poster-title="Saxby All Saints Christmas Market">
+                    <i class="bi bi-file-earmark-image me-1"></i>View Flyer
+                  </button>
                 </div>
                 
                 <h3 class="h5 mb-2 text-primary-dark">Saxby All Saints Christmas Market</h3>
@@ -305,13 +318,18 @@
                 </div>
 
                 <p class="text-secondary small flex-grow-1">
-                  Free entry festive market showcasing unique local gifts, handmade arts, and seasonal crafts. Perfect for holiday shopping and soaking up village cheer!
+                  Free entry festive market showcasing unique local gifts, delicious food, handmade arts, and seasonal crafts from small independent businesses. Perfect for holiday shopping and soaking up village cheer!
                 </p>
 
                 <div class="pt-3 border-top mt-auto">
                   <div class="d-flex justify-content-between align-items-center">
                     <span class="small text-muted"><i class="bi bi-bag-heart text-danger me-1"></i> Arts &amp; Crafts</span>
-                    <a href="contact.html" class="btn btn-outline-custom btn-sm">Market Details</a>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/christmasmarket.jpg" data-poster-title="Saxby All Saints Christmas Market" title="View Full Poster">
+                        <i class="bi bi-file-earmark-image"></i>
+                      </button>
+                      <a href="contact.html" class="btn btn-outline-custom btn-sm">Market Details</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -363,12 +381,25 @@
           <!-- Activity 1: Open Mic Night -->
           <div class="col-md-6 col-lg-4">
             <div class="custom-card">
+              <div class="event-card-media" role="button" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/openmicnight.jpg" data-poster-title="Open Mic Night" data-poster-type="Event Photo">
+                <img src="assets/images/openmicnight.jpg" class="event-poster-img" style="object-position: center 60%;" alt="Saxby Village Hall Open Mic Night" loading="eager">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-3 shadow-sm fw-bold">Monthly</span>
+                <span class="badge bg-success position-absolute top-0 end-0 m-3 shadow-sm fw-bold">Free Entry</span>
+                <div class="event-poster-overlay">
+                  <span class="small text-white"><i class="bi bi-mic-fill me-1 text-warning"></i>Acoustic Music &amp; Song</span>
+                  <button type="button" class="event-poster-zoom-btn" tabindex="-1">
+                    <i class="bi bi-zoom-in"></i> View Photo
+                  </button>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-primary-subtle text-primary fw-bold px-2 py-1">
                     <i class="bi bi-mic-fill me-1"></i> Monthly Music
                   </span>
-                  <span class="badge bg-success-subtle text-success fw-bold px-2 py-1">Free Entry</span>
+                  <button type="button" class="btn btn-link p-0 text-decoration-none small fw-semibold text-primary" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/openmicnight.jpg" data-poster-title="Open Mic Night" data-poster-type="Event Photo">
+                    <i class="bi bi-image me-1"></i>View Photo
+                  </button>
                 </div>
                 
                 <h3 class="h5 mb-2 text-primary-dark">Open Mic Night</h3>
@@ -383,8 +414,10 @@
 
                 <div class="pt-3 border-top mt-auto">
                   <div class="d-flex justify-content-between align-items-center">
-                    <span class="small text-muted"><i class="bi bi-people text-primary me-1"></i> Friendly social</span>
-                    <span class="badge bg-light text-dark border">Drop in</span>
+                    <span class="small text-muted"><i class="bi bi-people text-primary me-1"></i> Friendly social &bull; Drop in</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/openmicnight.jpg" data-poster-title="Open Mic Night" data-poster-type="Event Photo">
+                      <i class="bi bi-arrows-fullscreen me-1"></i> View Photo
+                    </button>
                   </div>
                 </div>
               </div>
@@ -394,28 +427,48 @@
           <!-- Activity 2: Folk Session -->
           <div class="col-md-6 col-lg-4">
             <div class="custom-card">
+              <div class="event-card-media" role="button" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/folksession.jpg" data-poster-title="Folk Sessions">
+                <img src="assets/images/folksession.jpg" class="event-poster-img" alt="Saxby Village Hall Folk Sessions Poster" loading="eager">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-3 shadow-sm fw-bold">Monthly</span>
+                <span class="badge bg-success position-absolute top-0 end-0 m-3 shadow-sm fw-bold">Free Entry</span>
+                <div class="event-poster-overlay">
+                  <span class="small text-white"><i class="bi bi-cup-straw me-1 text-warning"></i>Draught Beer &amp; Live Music</span>
+                  <button type="button" class="event-poster-zoom-btn" tabindex="-1">
+                    <i class="bi bi-zoom-in"></i> View Poster
+                  </button>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-primary-subtle text-primary fw-bold px-2 py-1">
                     <i class="bi bi-music-note me-1"></i> Monthly Folk
                   </span>
-                  <span class="badge bg-success-subtle text-success fw-bold px-2 py-1">Free Entry</span>
+                  <button type="button" class="btn btn-link p-0 text-decoration-none small fw-semibold text-primary" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/folksession.jpg" data-poster-title="Folk Sessions">
+                    <i class="bi bi-file-earmark-image me-1"></i>View Flyer
+                  </button>
                 </div>
                 
                 <h3 class="h5 mb-2 text-primary-dark">Folk Session</h3>
                 
                 <div class="text-muted small mb-3">
-                  <i class="bi bi-calendar-check text-primary me-2"></i><strong>Second Thursday of each month</strong>
+                  <div class="mb-1">
+                    <i class="bi bi-calendar-check text-primary me-2"></i><strong>Second Thursday of each month</strong>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock text-primary me-2"></i>8:00 PM &ndash; Late
+                  </div>
                 </div>
 
                 <p class="text-secondary small flex-grow-1">
-                  Free entry &ndash; come along and play traditional tunes or sit back and listen with a beer. An informal, welcoming acoustic session celebrating folk music and friendship.
+                  Free entry &ndash; come along to play traditional tunes or sit back and relax with draught beer and live music. An informal, welcoming acoustic session celebrating folk music and friendship.
                 </p>
 
                 <div class="pt-3 border-top mt-auto">
                   <div class="d-flex justify-content-between align-items-center">
-                    <span class="small text-muted"><i class="bi bi-cup me-1"></i> BYO Drinks</span>
-                    <span class="badge bg-light text-dark border">Drop in</span>
+                    <span class="small text-muted"><i class="bi bi-cup-hot text-primary me-1"></i> Draught Beer on Tap</span>
+                    <button type="button" class="btn btn-outline-custom btn-sm" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/folksession.jpg" data-poster-title="Folk Sessions">
+                      <i class="bi bi-arrows-fullscreen me-1"></i> View Flyer
+                    </button>
                   </div>
                 </div>
               </div>
@@ -425,12 +478,23 @@
           <!-- Activity 3: Art Class -->
           <div class="col-md-6 col-lg-4">
             <div class="custom-card">
+              <div class="event-card-media" role="button" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/artclass.jpg" data-poster-title="Art Class">
+                <img src="assets/images/artclass.jpg" class="event-poster-img" alt="Saxby Village Hall Art Class Poster" loading="eager">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-3 shadow-sm fw-bold">Every Week</span>
+                <span class="badge bg-dark position-absolute top-0 end-0 m-3 shadow-sm fw-bold">&pound;7</span>
+                <div class="event-poster-overlay">
+                  <span class="small text-white">Anyone can learn to draw</span>
+                  <button type="button" class="event-poster-zoom-btn" tabindex="-1">
+                    <i class="bi bi-zoom-in"></i> View Poster
+                  </button>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-warning-subtle text-dark fw-bold px-2 py-1">
                     <i class="bi bi-palette-fill me-1"></i> Weekly Art
                   </span>
-                  <span class="badge bg-light text-secondary border">All Abilities</span>
+                  <span class="badge bg-light text-secondary border">All Abilities &bull; &pound;7</span>
                 </div>
                 
                 <h3 class="h5 mb-2 text-primary-dark">Art Class</h3>
@@ -445,15 +509,20 @@
                 </div>
 
                 <p class="text-secondary small flex-grow-1">
-                  Relaxed painting and drawing sessions for all skill levels. Work at your own pace in a friendly, encouraging environment. Just drop in or contact Howard for info.
+                  Relaxed painting and drawing sessions for all skill levels &ndash; anyone can learn to draw! Work at your own pace in a friendly, encouraging environment. Just drop in or contact Howard.
                 </p>
 
                 <div class="pt-3 border-top mt-auto">
                   <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted">Contact: <strong>Howard</strong></small>
-                    <a href="tel:07974479622" class="btn btn-outline-custom btn-sm">
-                      <i class="bi bi-telephone-fill me-1"></i> 07974 479622
-                    </a>
+                    <small class="text-muted">Howard: <strong>07974 479622</strong></small>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/artclass.jpg" data-poster-title="Art Class" title="View Full Poster">
+                        <i class="bi bi-file-earmark-image"></i>
+                      </button>
+                      <a href="tel:07974479622" class="btn btn-outline-custom btn-sm">
+                        <i class="bi bi-telephone-fill me-1"></i> Call
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -463,12 +532,23 @@
           <!-- Activity 4: Contract Bridge -->
           <div class="col-md-6 col-lg-4">
             <div class="custom-card">
+              <div class="event-card-media" role="button" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/contractbridge.jpg" data-poster-title="Contract Bridge">
+                <img src="assets/images/contractbridge.jpg" class="event-poster-img" alt="Saxby Village Hall Contract Bridge Poster" loading="eager">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-3 shadow-sm fw-bold">2 x Monthly</span>
+                <span class="badge bg-dark position-absolute top-0 end-0 m-3 shadow-sm fw-bold">&pound;2</span>
+                <div class="event-poster-overlay">
+                  <span class="small text-white"><i class="bi bi-cup-straw me-1 text-warning"></i>Bar Open</span>
+                  <button type="button" class="event-poster-zoom-btn" tabindex="-1">
+                    <i class="bi bi-zoom-in"></i> View Poster
+                  </button>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-info-subtle text-dark fw-bold px-2 py-1">
                     <i class="bi bi-suit-spade-fill me-1"></i> Cards &amp; Games
                   </span>
-                  <span class="badge bg-light text-secondary border">Fortnightly</span>
+                  <span class="badge bg-light text-secondary border">&pound;2 &bull; Bar Open</span>
                 </div>
                 
                 <h3 class="h5 mb-2 text-primary-dark">Contract Bridge</h3>
@@ -483,15 +563,20 @@
                 </div>
 
                 <p class="text-secondary small flex-grow-1">
-                  An enjoyable evening of contract bridge in a sociable, friendly setting. Players of varied experience levels are welcome to join. Call John to confirm attendance.
+                  Learn to play, hone your skills, and relax with friends in a sociable setting with the village hall bar open. Players of varied experience levels warmly welcome. Call John to confirm.
                 </p>
 
                 <div class="pt-3 border-top mt-auto">
                   <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted">Contact: <strong>John</strong></small>
-                    <a href="tel:01652618615" class="btn btn-outline-custom btn-sm">
-                      <i class="bi bi-telephone-fill me-1"></i> 01652 618615
-                    </a>
+                    <small class="text-muted">John: <strong>01652 618615</strong></small>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/contractbridge.jpg" data-poster-title="Contract Bridge" title="View Full Poster">
+                        <i class="bi bi-file-earmark-image"></i>
+                      </button>
+                      <a href="tel:01652618615" class="btn btn-outline-custom btn-sm">
+                        <i class="bi bi-telephone-fill me-1"></i> Call
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -501,12 +586,23 @@
           <!-- Activity 5: Arts and Crafts -->
           <div class="col-md-6 col-lg-4">
             <div class="custom-card">
+              <div class="event-card-media" role="button" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/artsandcrafts.jpg" data-poster-title="Arts &amp; Crafts">
+                <img src="assets/images/artsandcrafts.jpg" class="event-poster-img" alt="Saxby Village Hall Arts and Crafts Poster" loading="eager">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-3 shadow-sm fw-bold">Every Week</span>
+                <span class="badge bg-dark position-absolute top-0 end-0 m-3 shadow-sm fw-bold">&pound;2</span>
+                <div class="event-poster-overlay">
+                  <span class="small text-white">Creative minds think unlike</span>
+                  <button type="button" class="event-poster-zoom-btn" tabindex="-1">
+                    <i class="bi bi-zoom-in"></i> View Poster
+                  </button>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-success-subtle text-success fw-bold px-2 py-1">
                     <i class="bi bi-scissors me-1"></i> Weekly Crafts
                   </span>
-                  <span class="badge bg-light text-secondary border">Drop In</span>
+                  <span class="badge bg-light text-secondary border">&pound;2 &bull; Drop In</span>
                 </div>
                 
                 <h3 class="h5 mb-2 text-primary-dark">Arts and Crafts</h3>
@@ -521,15 +617,20 @@
                 </div>
 
                 <p class="text-secondary small flex-grow-1">
-                  Bring your personal arts, crafts, knitting, or hobbies for an afternoon of creative company, shared tips, and tea. Just drop in or give Dave a call.
+                  Bring your personal arts, crafts, knitting, or hobbies for an afternoon of creative company, shared tips, and tea &ndash; because creative minds think unlike! Just drop in or give Dave a call.
                 </p>
 
                 <div class="pt-3 border-top mt-auto">
                   <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted">Contact: <strong>Dave</strong></small>
-                    <a href="tel:07858376228" class="btn btn-outline-custom btn-sm">
-                      <i class="bi bi-telephone-fill me-1"></i> 07858 376228
-                    </a>
+                    <small class="text-muted">Dave: <strong>07858 376228</strong></small>
+                    <div class="d-flex gap-2">
+                      <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#posterModal" data-poster-src="assets/images/artsandcrafts.jpg" data-poster-title="Arts &amp; Crafts" title="View Full Poster">
+                        <i class="bi bi-file-earmark-image"></i>
+                      </button>
+                      <a href="tel:07858376228" class="btn btn-outline-custom btn-sm">
+                        <i class="bi bi-telephone-fill me-1"></i> Call
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -539,6 +640,15 @@
           <!-- Activity 6: Pilates with Sue Hughes -->
           <div class="col-md-6 col-lg-4">
             <div class="custom-card">
+              <div class="event-card-media event-media-placeholder event-media-fitness">
+                <div class="text-center text-white p-3">
+                  <div class="card-icon-header mx-auto mb-2" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: #34d399;">
+                    <i class="bi bi-heart-pulse-fill fs-3"></i>
+                  </div>
+                  <span class="badge bg-success text-white fw-bold mb-1">Fitness &amp; Wellbeing</span>
+                  <div class="small text-white-50">Every Monday Evening 5:45 PM &ndash; 6:45 PM</div>
+                </div>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-primary-subtle text-primary fw-bold px-2 py-1">
@@ -564,9 +674,9 @@
 
                 <div class="pt-3 border-top mt-auto">
                   <div class="d-flex justify-content-between align-items-center">
-                    <small class="text-muted">Contact: <strong>Sue Hughes</strong></small>
+                    <small class="text-muted">Sue Hughes: <strong>07794 597829</strong></small>
                     <a href="tel:07794597829" class="btn btn-primary-custom btn-sm">
-                      <i class="bi bi-telephone-fill me-1"></i> 07794 597829
+                      <i class="bi bi-telephone-fill me-1"></i> Call
                     </a>
                   </div>
                 </div>
@@ -594,6 +704,32 @@
 
     </div>
   </main>
+
+  <!-- Event Poster Lightbox Modal -->
+  <div class="modal fade" id="posterModal" tabindex="-1" aria-labelledby="posterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg overflow-hidden">
+        <div class="modal-header bg-dark text-white border-0 py-3">
+          <h5 class="modal-title h6 mb-0" id="posterModalLabel">
+            <i class="bi bi-file-earmark-image text-warning me-2"></i>Event Poster
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-2 p-md-3 bg-light text-center">
+          <img id="posterModalImg" src="assets/images/folksession.jpg" alt="Event Poster" class="img-fluid rounded shadow-sm" style="max-height: 80vh; width: auto; object-fit: contain;">
+        </div>
+        <div class="modal-footer bg-white border-0 py-2 d-flex justify-content-between align-items-center">
+          <span id="posterModalCaption" class="small text-muted fw-semibold">Saxby All Saints Village Hall &bull; Event Poster</span>
+          <div class="d-flex gap-2">
+            <a id="posterModalDownload" href="assets/images/folksession.jpg" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">
+              <i class="bi bi-box-arrow-up-right me-1"></i>Open Full Size
+            </a>
+            <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer-custom">

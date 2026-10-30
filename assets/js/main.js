@@ -97,4 +97,52 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, false);
   }
+
+  // 7. Auto-initialize and start Bootstrap Carousels reliably
+  const carouselEls = document.querySelectorAll('.carousel');
+  carouselEls.forEach((carouselEl) => {
+    if (window.bootstrap && window.bootstrap.Carousel) {
+      const carouselInstance = window.bootstrap.Carousel.getOrCreateInstance(carouselEl, {
+        interval: 4500,
+        ride: 'carousel',
+        wrap: true,
+        touch: true,
+        pause: 'hover'
+      });
+      carouselInstance.cycle();
+    }
+  });
+
+  // 8. Event Poster Modal Lightbox Handler
+  const posterModal = document.getElementById('posterModal');
+  if (posterModal) {
+    posterModal.addEventListener('show.bs.modal', (event) => {
+      const trigger = event.relatedTarget;
+      if (trigger) {
+        const posterSrc = trigger.getAttribute('data-poster-src');
+        const posterTitle = trigger.getAttribute('data-poster-title') || 'Event Flyer';
+        const posterType = trigger.getAttribute('data-poster-type') || 'Official Event Poster';
+        const modalImg = posterModal.querySelector('#posterModalImg');
+        const modalLabel = posterModal.querySelector('#posterModalLabel');
+        const modalCaption = posterModal.querySelector('#posterModalCaption');
+        const modalDownload = posterModal.querySelector('#posterModalDownload');
+
+        if (modalImg && posterSrc) {
+          modalImg.src = posterSrc;
+          modalImg.alt = `${posterTitle} - Saxby All Saints Village Hall`;
+        }
+        if (modalLabel) {
+          modalLabel.innerHTML = `<i class="bi bi-file-earmark-image text-warning me-2"></i>${posterTitle} &bull; ${posterType}`;
+        }
+        if (modalCaption) {
+          modalCaption.textContent = `Saxby All Saints Village Hall \u2022 ${posterTitle}`;
+        }
+        if (modalDownload && posterSrc) {
+          modalDownload.href = posterSrc;
+        }
+      }
+    });
+  }
 });
+
+
